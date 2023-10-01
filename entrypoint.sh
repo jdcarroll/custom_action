@@ -1,10 +1,7 @@
 #!/bin/sh -l
 
-my_string="$1"
-IFS=';' read -ra my_array <<< "$my_string"
-
 #Print the split string
-for i in "${my_array[@]}"
+for i in $1
 do
     echo "Hello $i"
 done
