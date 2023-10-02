@@ -2,7 +2,7 @@
 
 IFS=';' read -ra my_array <<< "$1"
 #Print the split string
-for i in $1
+for i in "${my_array[@]}"
 do
     echo "Hello $i"
 done
